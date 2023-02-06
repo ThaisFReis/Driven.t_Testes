@@ -11,7 +11,7 @@ async function findAllHotels() {
 }
 
 // Encontra um hotel pelo id incluindo os quartos
-async function findHotelById(hotelId: number) {
+async function findWithRoomsById(hotelId: number) {
     return await prisma.hotel.findFirst({
         where: { id: hotelId },
         include: {
@@ -22,7 +22,7 @@ async function findHotelById(hotelId: number) {
 
 const hotelsRepository = {
     findAllHotels,
-    findHotelById,
+    findWithRoomsById,
 }
 
 export default hotelsRepository;
