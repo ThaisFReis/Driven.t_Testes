@@ -1,5 +1,4 @@
 import { prisma } from '@/config'
-import { Hotel } from '@prisma/client'
 
 // Encontra todos os hotéis incluindo os quartos
 async function findAllHotels() {

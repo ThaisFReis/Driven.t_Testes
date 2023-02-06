@@ -1,4 +1,3 @@
-import { Hotel, Room } from '@prisma/client'
 import hotelsRepository from '@/repositories/hotels-repository'
 
 // Encontra todos os hotéis
@@ -15,5 +14,7 @@ const hotelsService = {
     getAllHotels,
     getWithRoomsById,
 };
+
+export default hotelsService;
 
 // Este arquivo é um intermediário entre a camada de repositório e a camada de controller. É onde são definidas as regras de negócio e lógica de aplicação.
